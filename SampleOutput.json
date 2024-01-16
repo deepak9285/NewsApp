@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 37,
+    "articles": [
+        {
+            "source": {
+                "id": "politico",
+                "name": "Politico"
+            },
+            "author": null,
+            "title": "Biden stands by Austin as befuddled White House handles secret hospitalization fallout - POLITICO",
+            "description": "The defense chief is facing criticism for keeping his bosses in the dark.",
+            "url": "https://www.politico.com/news/2024/01/07/biden-stands-by-austin-as-befuddled-white-house-handles-secret-hospitalization-fallout-00134182",
+            "urlToImage": "https://static.politico.com/77/ea/4457fc2b4cd58ba9c27e654cfd6a/https-delivery-gettyimages.com/downloads/1239919482",
+            "publishedAt": "2024-01-07T12:00:00Z",
+            "content": "Days later, Austins secret hospitalization has spiraled into a drama engulfing the upper echelons of the Biden administration. Senior White House officials are struggling to answer questions about wh… [+6195 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": null,
+            "title": "Post Office scandal: Rishi Sunak considers measures to clear all victims - BBC.com",
+            "description": "The justice secretary is looking into steps to help hundreds of wrongly convicted sub-postmasters.",
+            "url": "https://www.bbc.com/news/business-67905194",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/C5C8/production/_132223605_240c419f0becb79eb0082d80915f9ba4365cf81f.jpg",
+            "publishedAt": "2024-01-07T11:34:00Z",
+            "content": "By Dearbail JordanBusiness reporter\r\nWatch: Sunak says Post Office scandal is \"appalling miscarriage of justice\"\r\nMeasures are being considered by the government to clear hundreds of sub-postmasters … [+6135 chars]"
+        },
+        {
+            "source": {
+                "id": "the-hill",
+                "name": "The Hill"
+            },
+            "author": "Joseph Choi",
+            "title": "Why fears over a 'tripledemic' are surging - The Hill",
+            "description": "Cases of three major respiratory viruses — the flu, COVID-19 and RSV — are surging in the U.S., pushing the country toward a feared “tripledemic” during its first post-pandemic respiratory viral season.  Optimism was high this autumn as the U.S. headed into t…",
+            "url": "https://thehill.com/policy/healthcare/4392133-fears-tripledemic-surging/",
+            "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2024/01/Tripledemic_010623_Illustration_courtneyJonesandAdobeStock.png?w=1280",
+            "publishedAt": "2024-01-07T11:00:00Z",
+            "content": "Skip to content\r\nCases of three major respiratory viruses — the flu, COVID-19 and RSV — are surging in the U.S., pushing the country toward a feared “tripledemic” during its first post-pandemic respi… [+5742 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Reuters.com",
+            "title": "North Korea vows military strike if any provocation, fires artillery rounds - Reuters.com",
+            "description": null,
+            "url": "https://www.reuters.com/world/asia-pacific/north-koreas-kim-yo-jong-vows-immediate-response-provocation-kcna-2024-01-07/",
+            "urlToImage": null,
+            "publishedAt": "2024-01-07T10:38:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Fox Business"
+            },
+            "author": "Landon Mion",
+            "title": "FAA to temporarily ground certain Boeing planes after Alaska Airlines door blew off in midair - Fox Business",
+            "description": "The FAA ordered a temporary grounding and inspections of certain Boeing 737 Max 9 planes after an Alaska Airlines flight was forced to make an emergency landing when a door blew out.",
+            "url": "https://www.foxbusiness.com/fox-news-travel/faa-temporarily-ground-certain-boeing-planes-after-alaska-airlines-door-blew-off-midair",
+            "urlToImage": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2024/01/0/0/alaskaairlinesflight.png?ve=1&tl=1",
+            "publishedAt": "2024-01-07T10:20:00Z",
+            "content": "The Federal Aviation Administration announced a temporary grounding and inspections of certain Boeing 737 Max 9 planes after an Alaska Airlines flight was forced to make an emergency landing Friday n… [+3015 chars]"
+        },
+        {
+            "source": {
+                "id": "the-washington-post",
+                "name": "The Washington Post"
+            },
+            "author": "Niha Masih, Jennifer Hassan, John Hudson, Yasmeen Abutaleb, Shane Harris",
+            "title": "Israel-Gaza war live updates: Blinken in Middle East as U.S. seeks to avert war between Israel and Hezbollah - The Washington Post",
+            "description": "The secretary of state’s tour is part of the U.S. effort to avoid regional escalation, in particular a war between Israel and the militant group in Lebanon.",
+            "url": "https://www.washingtonpost.com/world/2024/01/07/israel-hamas-war-gaza-news-palestine/",
+            "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://d1i4t8bqe7zgj6.cloudfront.net/01-07-2024/t_542a740c3bec4840811b74a7f8030823_name_UG3Y5CBFJHTU37IQY74PED45AE.jpg&w=1440",
+            "publishedAt": "2024-01-07T09:56:15Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "SciTechDaily"
+            },
+            "author": null,
+            "title": "Astronomical Illusions: New Images Reveal What Neptune and Uranus Really Look Like - SciTechDaily",
+            "description": "Recent research led by Professor Patrick Irwin shows that Neptune and Uranus are both a similar shade of greenish-blue, challenging previous perceptions of their colors. The study used modern telescopic data to correct historical color inaccuracies and explai…",
+            "url": "https://scitechdaily.com/astronomical-illusions-new-images-reveal-what-neptune-and-uranus-really-look-like/",
+            "urlToImage": "https://scitechdaily.com/images/Neptune-and-Uranus-True-Colors.jpg",
+            "publishedAt": "2024-01-07T09:42:41Z",
+            "content": "A study reveals Neptune and Uranus are both greenish-blue, not the deep azure and pale cyan previously believed. Modern telescope data was used to correct these historical color misrepresentations. C… [+8848 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "FRANCE 24 English"
+            },
+            "author": "NEWS WIRES",
+            "title": "Trump says he will win US presidency 'for third time' on anniversary of Capitol riot - FRANCE 24 English",
+            "description": "Donald Trump hit the campaign trail Saturday in the first-in-the-nation presidential nominating state of Iowa, vowing to win \"for the third time\" as Americans marked the anniversary of the deadly assault on the US Capitol by a mob of his supporters.",
+            "url": "https://www.france24.com/en/americas/20240107-trump-says-he-will-win-us-presidency-for-third-time-on-anniversary-of-capitol-riot",
+            "urlToImage": "https://s.france24.com/media/display/37479a8c-ad2b-11ee-859c-005056a97e36/w:1280/p:16x9/000_349M2W2.jpg",
+            "publishedAt": "2024-01-07T09:19:07Z",
+            "content": "Donald Trump hit the campaign trail Saturday in the first-in-the-nation presidential nominating state of Iowa, vowing to win \"for the third time\" as Americans marked the anniversary of the deadly ass… [+4372 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Cointelegraph"
+            },
+            "author": "Cointelegraph",
+            "title": "Bitcoin ETFs will solve unit bias psychology, says VanEck adviser - Cointelegraph",
+            "description": null,
+            "url": "https://cointelegraph.com/news/bitcoin-etf-unit-bias-psychology-vaneck",
+            "urlToImage": null,
+            "publishedAt": "2024-01-07T08:43:06Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Suntimes.com"
+            },
+            "author": "Georgia Nicols",
+            "title": "Horoscope for Sunday, Jan. 7, 2024 - Chicago Sun-Times",
+            "description": null,
+            "url": "https://chicago.suntimes.com/2024/1/7/24022168/horoscopes-today-sunday-jan-7-2024",
+            "urlToImage": "https://cst.brightspotcdn.com/dims4/default/639adc9/2147483647/strip/true/crop/870x497+0+67/resize/1461x834!/quality/90/?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2Fp1n6qV-PvS7b_cuWOfbzYFJPIuU%3D%2F0x0%3A870x630%2F870x630%2Ffilters%3Afocal%28435x315%3A436x316%29%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F25198440%2FGeorgia_mug.jpeg",
+            "publishedAt": "2024-01-07T06:02:28Z",
+            "content": "Moon Alert\r\nAvoid shopping or important decisions from 2 to 3:30 p.m. Chicago time. After that, the moon moves from Scorpio into Sagittarius.\r\nAries (March 21-April 19)\r\nTake it easy today. Relax and… [+3788 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "[Removed]"
+            },
+            "author": null,
+            "title": "[Removed]",
+            "description": "[Removed]",
+            "url": "https://removed.com",
+            "urlToImage": null,
+            "publishedAt": "1970-01-01T00:00:00Z",
+            "content": "[Removed]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "KABC-TV"
+            },
+            "author": null,
+            "title": "2 killed, several others injured in major 35-vehicle pile-up on 5 Freeway in Bakersfield - KABC-TV",
+            "description": "Two people were killed and nine others were injured in a major 35-vehicle pile-up in Bakersfield.",
+            "url": "https://abc7.com/bakersfield-crash-5-freeway-california-interstation-i5/14289809/",
+            "urlToImage": "https://cdn.abcotvs.com/dip/images/14289853_bakersfield-crash-TN-img.jpg?w=1600",
+            "publishedAt": "2024-01-07T05:52:23Z",
+            "content": "BAKERSFIELD, Calif. (KABC) -- Two people were killed and nine others were injured in a major 35-vehicle pile-up in Bakersfield.\r\nThe collision happened along the 5 Freeway Saturday morning, and it ap… [+340 chars]"
+        },
+        {
+            "source": {
+                "id": "business-insider",
+                "name": "Business Insider"
+            },
+            "author": "Katherine Tangalakis-Lippert, Lloyd Lee, Hannah Getahun",
+            "title": "SpaceX execs worried Elon Musk was on drugs for 'cringeworthy' meeting: WSJ - Business Insider",
+            "description": "The Journal reported executives at SpaceX worried Elon Musk was on drugs after an \"unhinged\" all-hands meeting in which he slurred and rambled.",
+            "url": "https://www.businessinsider.com/elon-musk-drug-use-cringeworthy-spacex-meeting-wsj-2024-1",
+            "urlToImage": "https://i.insider.com/659a28006979d7371821140d?width=1200&format=jpeg",
+            "publishedAt": "2024-01-07T05:52:00Z",
+            "content": "After Elon Musk arrived nearly an hour late to an all-hands meeting at SpaceX, rambling and slurring his words for about 15 minutes before the meeting was taken over by the spacecraft manufacturer's … [+2794 chars]"
+        },
+        {
+            "source": {
+                "id": "the-wall-street-journal",
+                "name": "The Wall Street Journal"
+            },
+            "author": "Jared Malsin, William Mauldin",
+            "title": "Hezbollah Fires Rocket Barrage Into Israel as Blinken Mounts New De-Escalation Push - The Wall Street Journal",
+            "description": "Attacks are flaring across the Middle East as tensions from the war in Gaza deepen",
+            "url": "https://www.wsj.com/world/middle-east/hezbollah-fires-rocket-barrage-into-israel-as-blinken-mounts-new-de-escalation-push-8199717e",
+            "urlToImage": "https://images.wsj.net/im-909015/social",
+            "publishedAt": "2024-01-07T05:24:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Hollywood Reporter"
+            },
+            "author": "Carly Thomas",
+            "title": "Halle Bailey Welcomes Baby Boy With Boyfriend DDG - Hollywood Reporter",
+            "description": "The actress-singer wrote on Instagram, \"Welcome to the world my halo the world is desperate to know you.\"",
+            "url": "http://www.hollywoodreporter.com/lifestyle/lifestyle-news/halle-bailey-boyfriend-ddg-welcome-baby-boy-1235781011/",
+            "urlToImage": "https://www.hollywoodreporter.com/wp-content/uploads/2024/01/GettyImages-1741179681.jpg?w=1024",
+            "publishedAt": "2024-01-07T05:08:14Z",
+            "content": "Halle Bailey and her boyfriend, rapper DDG, are officially parents to a baby boy.\r\nThe Little Mermaid actress took to Instagram Saturday evening to reveal that the pair welcomed their first child, a … [+1241 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "HuffPost"
+            },
+            "author": "Drusilla Moorhouse",
+            "title": "Gypsy Rose Blanchard Reveals She Had Shot Her Mom Years Before The Murder - HuffPost",
+            "description": "Before ultimately convincing Nicholas Godejohn to kill her abusive mother, Gypsy Rose says, she shot at her with a BB gun she mistook for a deadly weapon.",
+            "url": "https://www.huffpost.com/entry/gypsy-rose-blanchard-shooting-revelation_n_65988440e4b0f9f6621cb969",
+            "urlToImage": "https://img.huffingtonpost.com/asset/65989fc62400001a0027ee7d.jpg?cache=zdB4eeV1g0&ops=1200_630",
+            "publishedAt": "2024-01-07T05:01:13Z",
+            "content": "Gypsy Rose Blanchard, who was just released from prison in the killing of her mother, revealed in a new docuseries that she once shot her at their home before she had even met the boyfriend with whom… [+5964 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CBS Sports"
+            },
+            "author": "",
+            "title": "Prisco's Week 18 NFL picks: Bills sink Dolphins on road for AFC East title; Packers clinch playoff spot - CBS Sports",
+            "description": "Pete Prisco shares all his picks in the final week of the regular season, including the Lions getting back on track",
+            "url": "https://www.cbssports.com/nfl/news/priscos-week-18-nfl-picks-bills-sink-dolphins-on-road-for-afc-east-title-packers-clinch-playoff-spot/",
+            "urlToImage": "https://sportshub.cbsistatic.com/i/r/2024/01/02/fb73acde-edfc-4dc2-845e-4bcfe5a739ec/thumbnail/1200x675/e487389abb3b51bb2ec645d006352e20/josh-allen-dolphins-g.jpg",
+            "publishedAt": "2024-01-07T04:44:25Z",
+            "content": "One game over .500. One lousy game.\r\nThat's where I am picking NFL games against the spread this season with one week to go. That's because I was a disappointing 7-9 last week to drop my season recor… [+7150 chars]"
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "author": "Ryan Morik",
+            "title": "Texans clinch playoff spot by holding off Colts' late push; Indianapolis eliminated - Fox News",
+            "description": "The Houston Texans clinched their first playoff berth since 2019 by holding off the Indianapolis Colts, eliminating them in the process.",
+            "url": "https://www.foxnews.com/sports/texans-clinch-playoff-spot-holding-off-colts-late-push-indianapolis-eliminated",
+            "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2024/01/nico.jpg",
+            "publishedAt": "2024-01-07T04:42:00Z",
+            "content": "The first defacto NFL playoff game was certainly a good one.\r\nThe Houston Texans have advanced to the playoffs - the Indianapolis Colts' season is over.\r\nHouston took down Indy on the road, 23-19, to… [+2303 chars]"
+        },
+        {
+            "source": {
+                "id": "axios",
+                "name": "Axios"
+            },
+            "author": "Axios",
+            "title": "House Speaker Johnson invites Biden to deliver State of the Union address on March 7 - Axios",
+            "description": null,
+            "url": "https://www.axios.com/2024/01/06/biden-state-of-the-union-address-super-tuesday",
+            "urlToImage": null,
+            "publishedAt": "2024-01-07T03:32:56Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "New York Post"
+            },
+            "author": "Fox Business",
+            "title": "Initial US employment reports overstated by 439,000 jobs in 2023 - New York Post ",
+            "description": "The government quietly erased 439,000 jobs through November 2023, a closer look at the numbers from the Bureau of Labor Statistics shows.",
+            "url": "https://nypost.com/2024/01/06/business/initial-us-employment-reports-overstated-by-439000-jobs-in-2023/",
+            "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2024/01/initial-us-employment-reports-overstated-74496505.jpg?quality=75&strip=all&w=1024",
+            "publishedAt": "2024-01-07T03:18:00Z",
+            "content": "Theres something wrong with previous U.S. jobs reports.\r\nThe government quietly erased 439,000 jobs through November 2023, a closer look at the numbers from the Bureau of Labor Statistics shows. \r\nTh… [+3981 chars]"
+        }
+    ]
+}
