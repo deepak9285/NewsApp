@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 //anchor tag use krne se page reload hoga to use kro href ke jagah pe and 'Link' use kro a ki jagah pe agar react router dom use krr rhe ho to
 
 // export default class Navbar extends Component {
-const Navbar = () => {
+const Navbar = (props) => {
   // render() {
+
   return (
     <>
       <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
@@ -68,6 +70,33 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+          <form className="d-flex" role="search">
+              <input
+                className="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                // value={props.searchItem}
+                onChange={props.handleSearch}
+                
+              />
+              <button className="btn btn-outline-success" type="submit">
+                Search
+              </button>
+              <div
+                className={`form-check form-switch text-${
+                  props.mode === "dark" ? "light" : "dark"
+                }`}
+              >
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  onClick={props.toggle}
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+              </div>
+            </form>
         </div>
       </nav>
     </>
