@@ -3,10 +3,18 @@ import React from "react";
 //export class NewsItems extends Component {
 const NewsItems = (props) => {
   //render() {
-  let { Title, description, imageurl, newsUrl, publishedAt, author, source } =
-    props;
+  let {
+    Title,
+    description,
+    imageurl,
+    newsUrl,
+    publishedAt,
+    author,
+    source,
+    mode,
+  } = props;
   return (
-    <div className="my-3">
+    <div className={`my-3 bg-${mode}`}>
       <div className="card">
         <span
           className="position-absolute top-0 translate-middle badge rounded-pill bg-danger"

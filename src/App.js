@@ -1,9 +1,12 @@
+//sAndfP9Ps0uRIQlpeKIBXQ==MzyP80fEi6IvzoRr
 import React, { useState } from "react";
+
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navvbar from "./components/Navvbar";
 import News from "./components/News";
+
 // import Quotes from "./components/Quotes";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 //alt+shift+click-for multiple cursor support
 //shit+arrow for selection
@@ -18,12 +21,27 @@ const App = () => {
   //   this.setState({ progress: progress });
   // };
   const [progress, setProgress] = useState(0);
+  const [mode, SetMode] = useState("light");
+  const toggleMode = () => {
+    if (mode === "dark") {
+      SetMode("light");
+      document.body.style.backgroundColor = "white";
+
+      document.title = "News app -Dark mode";
+    } else {
+      SetMode("dark");
+      document.body.style.backgroundColor = "dark";
+      document.title = "News app-Light mode";
+    }
+  };
+ 
 
   //render-jsx ko html me compile krega uske baad screen per show krega is a life cycle method jab react kisi ekk component ko load krti h to kuch series of mrthods run  hote h
   return (
     <div>
       <Router>
-        <Navbar />
+      
+        <Navvbar toggleMode={toggleMode} />
         {/* <News setProgress={setProgress} pageSize={6} country="in" category={"sports"} /> */}
         {/* <Quotes pageSize={6} country="in" /> */}
         <LoadingBar

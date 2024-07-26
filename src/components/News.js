@@ -1,15 +1,36 @@
 /* eslint-disable no-undef */
+//npm i @alan-ai/alan-sdk-web
 import React, { useEffect, useState } from "react";
 import NewsItems from "./NewsItems";
 import Spinner from "./Spinner";
+//import alanBtn from "@alan-ai/alan-sdk-web";
 import PropTypes from "prop-types";
+import Navvbar from "./Navvbar";
 import InfiniteScroll from "react-infinite-scroll-component";
 
+// const alanKey =
+//   "5c08fd0be1ac0459d11636c3987cb9d42e956eca572e1d8b807a3e2338fdd0dc/stage";
 const News = (props) => {
-  const [articals, setarticals] = useState([]);
+  const [articles, setarticles] = useState([]);
   const [loading, setloading] = useState(true);
   const [page, setpage] = useState(1);
   const [totalresults, settotalresults] = useState(0);
+  const [mode, SetMode] = useState("light");
+  //const [query, setQuery] = useState("");
+ // const [Filteredproducts, setFilteredproducts] = useState([]);
+
+  const toggleMode = () => {
+    if (mode === "dark") {
+      SetMode("light");
+      document.body.style.backgroundColor = "white";
+
+      document.title = "News app -Dark mode";
+    } else {
+      SetMode("dark");
+      document.body.style.backgroundColor = "dark";
+      document.title = "News app-Light mode";
+    }
+  };
   // static defaultProps = { ye sbb function based component me code ke end me likhte h
   //   country: "india",
   //   pageSize: 8,
@@ -35,7 +56,8 @@ const News = (props) => {
     let data = await fetch(url);
     props.setProgress(30);
     let parsedData = await data.json();
-    setarticals(parsedData.articles);
+    setarticles(parsedData.articles);
+   // setFilteredproducts(parsedData.articles);
     setloading(false);
     settotalresults(parsedData.totalresults);
     // this.setState({
@@ -45,6 +67,13 @@ const News = (props) => {
     // });
     props.setProgress(100);
   };
+    // Filter products based on title matching
+    // const filtered = articles.filter((articles) =>{
+    //  return articles.title.toLowerCase().includes(searchTerm)}
+    // );
+
+    // setFilteredproducts(filtered);
+
   // const componentDidMount=async ()=> {
   //   //ye kab run krega jab apka render method run ho jayega
   //   //async function apni body ke andar wait krr sakta kuch promises ko resolve krne ka
@@ -63,6 +92,20 @@ const News = (props) => {
   //component did mount jo kaam krr rha h whi kaam mera use effect krega
   useEffect(() => {
     updateNews();
+
+    // alanBtn({
+    //   key: alanKey,
+    //   onCommand: ({ command, articles }) => {
+    //     if (command === 'newHeadlines') {
+    //       // console.log('Received command:', command);
+    //       //object written in alan ai playground
+
+    //       console.log("API Response:", body);
+    //       console.log("Articles:", articles);
+    //     }
+    //   },
+    // });
+    //document.title = `$/{props.category}-News monkey`;
     document.title = `${props.category}-News monkey`;
   }, []);
 
@@ -113,7 +156,7 @@ const News = (props) => {
   //   this.setState({ page: this.state.page + 1 });
   //   this.updateNews();
   // };
-  const fetchMoreData = async () => {
+  const fetchMoreData = async (page) => {
     let url = `https://newsapi.org/v2/top-headlines?country=${
       props.country
     }&category=${props.category}&apiKey=${props.apiKey}&page=${
@@ -123,14 +166,15 @@ const News = (props) => {
     setpage(page + 1);
     let data = await fetch(url);
     let parsedData = await data.json();
-    setarticals(articals.concat(parsedData.articles));
+    setarticles(articles.concat(parsedData.articles));
+   // setFilteredproducts(Filteredproducts.concat(parsedData.articles));
     settotalresults(parsedData.totalresults);
     setloading(false);
     // setState({
     //   articals: articals.concat(parsedData.articles),
     //   totalresults: parsedData.totalresults,
     // });
-  };
+  }; /**932/ */
 
   return (
     <>
@@ -142,16 +186,17 @@ const News = (props) => {
         {/* //iss line ka mtlb hai kii jabb loading true h bhai spinner ko dikhye warna nhi */}
         {/* iteration of articals */}
         <InfiniteScroll
-          dataLength={articals.length}
+          dataLength={articles && articles.length}
           next={fetchMoreData}
-          hasMore={articals.length !== totalresults}
+          hasMore={articles && articles.length !==totalresults}
           loader={<Spinner />}
         >
           <div className="row">
             {/* {!this.state.loading && */}
-            {articals.map((element, id) => {
+            {articles.map((element, id) => {
               return (
                 <div className="col-md-4" key={id}>
+                  <Navvbar articles={articles} setarticles={setarticles}/>
                   <NewsItems
                     Title={element.title ? element.title.slice(0, 45) : " "} //if element.title!=null then make blank string
                     imageurl={element.urlToImage}
@@ -164,6 +209,9 @@ const News = (props) => {
                     publishedAt={element.publishedAt}
                     author={element.author}
                     source={element.source.name}
+                    mode={mode}
+                    toggleMode={toggleMode}
+                   
                   />
                 </div>
               );

@@ -1,16 +1,19 @@
-import React, { Component } from "react";
+import React, {  useState ,useEffect} from "react";
 import Quotesitems from "./Quotesitems";
 
-export class Quotes extends Component {
+const Quotes=(props)=> {
   articles = [];
-  constructor() {
-    super();
-    this.state = {
-      articles: this.articles,
-      Loading: false,
-      page: 1,
-    };
-  }
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     articles: this.articles,
+  //     Loading: false,
+  //     page: 1,
+  //   };
+  // }
+  const[articals,setarticals]=useState([]);
+  const[Loading,setLoading]=useState(false);
+  const[page,setPage]=useState(page);
   async componentDidMount() {
     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&apiKey=e82bfd1dbde74283af5eb86278b32dcb&page=1&pagesize=${this.props.pageSize}`;
     let data = await fetch(url);
@@ -19,6 +22,13 @@ export class Quotes extends Component {
       articles: parsedData.articles,
       totalresults: parsedData.totalResults, // Corrected property name
     });
+  }
+  const updateNews=async()=>{
+    props.set
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&apiKey=e82bfd1dbde74283af5eb86278b32dcb&page=1&pagesize=${this.props.pageSize}`;
+    let data=await fetch(url);
+    let parsedData=await data.json();
+    setarticals([...articals, ...parsedData.articles]);
   }
 
   handleNextClick = async () => {
@@ -100,7 +110,7 @@ export class Quotes extends Component {
                 this.state.page + 1 >=
                 Math.ceil(this.state.totalResults / this.state.pageSize)
               }
-            >
+      >
               Next
             </button>
           </div>

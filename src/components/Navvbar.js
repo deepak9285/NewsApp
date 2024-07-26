@@ -8,12 +8,13 @@ const Navbar = (props) => {
   // render() {
   const { articles, setarticles } = props;
   const temp = articles;
+  
   const handleSearch = (e) => {
     const searchValue = e.target.value;
-    // if (searchValue === "") {
-    //   setarticles(temp);
-    //   return;
-    // }
+    if (searchValue === "") {
+      setarticles(temp);
+      return;
+    }
     const filtered = temp?.filter((news) => {
       news.title.toLowerCase().includes(searchValue.toLowerCase());
     });
@@ -88,15 +89,14 @@ const Navbar = (props) => {
             <input
               className="form-control me-2"
               type="text"
-              action=''
               placeholder="Search"
               aria-label="Search"
               // value={props.searchItem}
               onChange={handleSearch}
             />
-            <button className="btn btn-outline-success" type="submit">
+            {/* <button className="btn btn-outline-success" type="submit">
               Search
-            </button>
+            </button> */}
             <div
               className={`form-check form-switch text-${
                 props.mode === "dark" ? "light" : "dark"
