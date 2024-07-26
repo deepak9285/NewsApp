@@ -3,21 +3,21 @@
 import React, { useEffect, useState } from "react";
 import NewsItems from "./NewsItems";
 import Spinner from "./Spinner";
-import alanBtn from "@alan-ai/alan-sdk-web";
+//import alanBtn from "@alan-ai/alan-sdk-web";
 import PropTypes from "prop-types";
-import Navbar from "./Navbar";
+import Navvbar from "./Navvbar";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-const alanKey =
-  "5c08fd0be1ac0459d11636c3987cb9d42e956eca572e1d8b807a3e2338fdd0dc/stage";
+// const alanKey =
+//   "5c08fd0be1ac0459d11636c3987cb9d42e956eca572e1d8b807a3e2338fdd0dc/stage";
 const News = (props) => {
   const [articles, setarticles] = useState([]);
   const [loading, setloading] = useState(true);
   const [page, setpage] = useState(1);
   const [totalresults, settotalresults] = useState(0);
   const [mode, SetMode] = useState("light");
-  const [query, setQuery] = useState("");
-  const [Filteredproducts, setFilteredproducts] = useState([]);
+  //const [query, setQuery] = useState("");
+ // const [Filteredproducts, setFilteredproducts] = useState([]);
 
   const toggleMode = () => {
     if (mode === "dark") {
@@ -57,7 +57,7 @@ const News = (props) => {
     props.setProgress(30);
     let parsedData = await data.json();
     setarticles(parsedData.articles);
-    setFilteredproducts(parsedData.articles);
+   // setFilteredproducts(parsedData.articles);
     setloading(false);
     settotalresults(parsedData.totalresults);
     // this.setState({
@@ -68,11 +68,11 @@ const News = (props) => {
     props.setProgress(100);
   };
     // Filter products based on title matching
-    const filtered = articles.filter((articles) =>{
-     return articles.title.toLowerCase().includes(searchTerm)}
-    );
+    // const filtered = articles.filter((articles) =>{
+    //  return articles.title.toLowerCase().includes(searchTerm)}
+    // );
 
-    setFilteredproducts(filtered);
+    // setFilteredproducts(filtered);
 
   // const componentDidMount=async ()=> {
   //   //ye kab run krega jab apka render method run ho jayega
@@ -93,18 +93,18 @@ const News = (props) => {
   useEffect(() => {
     updateNews();
 
-    alanBtn({
-      key: alanKey,
-      onCommand: ({ command, articles }) => {
-        if (command === 'newHeadlines') {
-          // console.log('Received command:', command);
-          //object written in alan ai playground
+    // alanBtn({
+    //   key: alanKey,
+    //   onCommand: ({ command, articles }) => {
+    //     if (command === 'newHeadlines') {
+    //       // console.log('Received command:', command);
+    //       //object written in alan ai playground
 
-          console.log("API Response:", body);
-          console.log("Articles:", articles);
-        }
-      },
-    });
+    //       console.log("API Response:", body);
+    //       console.log("Articles:", articles);
+    //     }
+    //   },
+    // });
     //document.title = `$/{props.category}-News monkey`;
     document.title = `${props.category}-News monkey`;
   }, []);
@@ -167,7 +167,7 @@ const News = (props) => {
     let data = await fetch(url);
     let parsedData = await data.json();
     setarticles(articles.concat(parsedData.articles));
-    setFilteredproducts(Filteredproducts.concat(parsedData.articles));
+   // setFilteredproducts(Filteredproducts.concat(parsedData.articles));
     settotalresults(parsedData.totalresults);
     setloading(false);
     // setState({
@@ -186,17 +186,17 @@ const News = (props) => {
         {/* //iss line ka mtlb hai kii jabb loading true h bhai spinner ko dikhye warna nhi */}
         {/* iteration of articals */}
         <InfiniteScroll
-          dataLength={Filteredproducts && Filteredproducts.length}
+          dataLength={articles && articles.length}
           next={fetchMoreData}
-          hasMore={Filteredproducts && Filteredproducts.length !== totalresults}
+          hasMore={articles && articles.length !==totalresults}
           loader={<Spinner />}
         >
           <div className="row">
             {/* {!this.state.loading && */}
-            {Filteredproducts && Filteredproducts.map((element, id) => {
+            {articles.map((element, id) => {
               return (
                 <div className="col-md-4" key={id}>
-                  <Navbar handleSearch={handleSearch}/>
+                  <Navvbar articles={articles} setarticles={setarticles}/>
                   <NewsItems
                     Title={element.title ? element.title.slice(0, 45) : " "} //if element.title!=null then make blank string
                     imageurl={element.urlToImage}

@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navvbar from "./components/Navvbar";
 import News from "./components/News";
+
 // import Quotes from "./components/Quotes";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
@@ -21,8 +22,6 @@ const App = () => {
   // };
   const [progress, setProgress] = useState(0);
   const [mode, SetMode] = useState("light");
-  const [search,Setsearch]=useState("");
-
   const toggleMode = () => {
     if (mode === "dark") {
       SetMode("light");
@@ -41,7 +40,8 @@ const App = () => {
   return (
     <div>
       <Router>
-        <Navbar toggleMode={toggleMode} />
+      
+        <Navvbar toggleMode={toggleMode} />
         {/* <News setProgress={setProgress} pageSize={6} country="in" category={"sports"} /> */}
         {/* <Quotes pageSize={6} country="in" /> */}
         <LoadingBar
